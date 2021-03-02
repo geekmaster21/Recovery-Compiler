@@ -1,14 +1,13 @@
 name: 'Recovery Compiler For Github Actions' 
 author: 'ElytrA8' 
-description: 'Universal Recovery Compiler' 
+description: 'Universal Recovery Compiler'
+
 runs:
   using: "composite"
   steps:
-    - run: curl -sL https://github.com/rokibhasansagar/slimhub_actions/raw/main/cleanup.sh | bash
+    - run: curl -sL https://raw.githubusercontent.com/Carbonatedblack/Recovery-Compiler/production/prepare.sh | bash
       shell: bash
-    - run: curl -sL https://raw.githubusercontent.com/CarbonatedBlack/Recovery-Compiler/production/prepare.sh | bash
-      shell: bash
-    - run: curl -sL https://raw.githubusercontent.com/CarbonatedBlack/Recovery-Compiler/production/builder.sh | bash
+    - run: curl -sL https://raw.githubusercontent.com/Carbonatedblack/Recovery-Compiler/production/builder.sh | bash
       shell: bash
 branding:
   icon: 'box'
